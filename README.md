@@ -1,4 +1,10 @@
-# Neuron imaging workspace
+<p align="center">
+  <img src="assets/lipid-droplet-icon.png" width="140" alt="Lipid droplet imaging icon">
+</p>
+
+# Lipid drop imaging workspace
+
+**Adaptive image-guided Raman acquisition and lipid-droplet tracking in adipocytes.**
 
 Launch `launch_cellpose4_napari.bat` using the existing conda environment
 `confocal_control_gui_cellpose4` (Cellpose 4.2.1.1). The launcher selects this
@@ -8,7 +14,7 @@ standalone conda executable fails. The launcher contains this machine's conda pa
 
 ## Git layout
 
-This parent repository and all four components use branch `neuron_imaging`.
+This parent repository and all four components use branch `lipid-drop-imaging`.
 The components are submodules: cns-control, napari-raman-widget, raman-control,
 and raman-mda-engine. Their complete existing histories remain intact.
 The parent tracks launch files, environment inventories, supporting files, and
@@ -41,6 +47,6 @@ Acquisition data, calibration outputs, caches, and temporary backups remain in t
 original workspace and are excluded. Existing tracked history is preserved in full.
 
 After extracting the package, run:
-`powershell -ExecutionPolicy Bypass -File .\restore.ps1 -Destination C:\path\neuron_imaging`
+`powershell -ExecutionPolicy Bypass -File .\restore.ps1 -Destination C:\path\lipid-drop-imaging`
 Choose a new destination. The script restores all pinned component revisions from
-the local bundles and places each component on neuron_imaging.
+the local bundles and places each component on lipid-drop-imaging.
